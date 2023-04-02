@@ -19,8 +19,7 @@
         </span>
     </div>
 
-    
-    {{ if or .Site.Params.showToc .Params.showToc }}
+    {{ if or (and .Site.Params.showToc (ne .Params.showToc false)) (eq .Params.showToc true) }}
         {{ partial "toc.html" . }}
     {{ end }}
 
