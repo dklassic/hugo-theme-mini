@@ -3,7 +3,7 @@
 		<a href="{{ "/" | relLangURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
 	<a href="{{ "/tags" | relLangURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
-	<a href="{{ "/games" | relLangURL }}">{{ with .Site.Params.games }}{{ . }}{{ else }}{{ i18n "games" }}{{ end }}</a>
+	<a href="{{ "/game-list" | relLangURL }}">{{ with .Site.Params.games }}{{ . }}{{ else }}{{ i18n "games" }}{{ end }}</a>
 	<a href="{{ "/about" | relLangURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
 
 	{{ range $element := .Site.Params.Links }}
