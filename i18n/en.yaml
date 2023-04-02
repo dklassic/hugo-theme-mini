@@ -10,6 +10,12 @@ tags:
 about:
   other: About
 
+autopanic:
+  other: Autopanic
+
+autopanic-zero:
+  other: Autopanic Zero
+
 subscribe:
   other: Subscribe
 
