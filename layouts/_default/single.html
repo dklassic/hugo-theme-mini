@@ -18,6 +18,13 @@
           {{ i18n "minuteRead" . }}
         </span>
     </div>
+    {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+    {{ end}}
 
     {{ if or (and .Site.Params.showToc (ne .Params.showToc false)) (eq .Params.showToc true) }}
         {{ partial "toc.html" . }}
@@ -28,13 +35,6 @@
       {{ .Content }}
     </div>
 
-    {{ with .Params.tags }}
-        <div class="tags">
-            {{ range . }}
-                <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-        </div>
-    {{ end}}
     
     {{ partial "comment.html" . }}
 
