@@ -76,10 +76,17 @@ tr:nth-child(odd)>td {
   background: #fcfcfc;
 }
 
-h1,
-h2,
+h1 {
+  font-weight: 800;
+  font-size: 32px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+}
 h3 {
   font-weight: 400;
+  font-size: 20px;
 }
 p {
   margin-block-start: 1.5em;
@@ -292,7 +299,7 @@ nav.navigation a.button {
   display: inline-block;
   color: #404040;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0;
   width: 80%;
 }
@@ -358,7 +365,7 @@ nav.navigation a.button {
 #single .title {
   text-align: center;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 48px;
 }
 
