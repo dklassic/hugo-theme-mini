@@ -1,12 +1,11 @@
 <nav class="navigation">
 	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
+		<a href="{{ "/" | relLangURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
-	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
-	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
-	<a href="{{ "/autopanic" | relURL }}">{{ with .Site.Params.autopanic }}{{ . }}{{ else }}{{ i18n "autopanic" }}{{ end }}</a>
-	<a href="{{ "/autopanic-zero" | relURL }}">{{ with .Site.Params.autopanicZero }}{{ . }}{{ else }}{{ i18n "autopanic-zero" }}{{ end }}</a>
-	<a href="{{ "/about" | relURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
+	<a href="{{ "/tags" | relLangURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
+	<a href="{{ "/autopanic" | relLangURL }}">{{ with .Site.Params.autopanic }}{{ . }}{{ else }}{{ i18n "autopanic" }}{{ end }}</a>
+	<a href="{{ "/autopanic-zero" | relLangURL }}">{{ with .Site.Params.autopanicZero }}{{ . }}{{ else }}{{ i18n "autopanic-zero" }}{{ end }}</a>
+	<a href="{{ "/about" | relLangURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>

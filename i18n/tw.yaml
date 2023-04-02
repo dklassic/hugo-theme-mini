@@ -1,8 +1,11 @@
 home:
   other: 首頁
 
+toc:
+  other: 目錄
+
 archive:
-  other: 封存
+  other: 列表
 
 tags:
   other: 標籤
