@@ -1,3 +1,4 @@
 <p class="markdown-image">
-  <a href="{{ .Destination | safeURL }}"><img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} /></a>
+  <!-- class medium-zoom-image is used to enable zooming on images -->
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} / class="medium-zoom-image">
 </p>
