@@ -29,6 +29,14 @@ blockquote {
   color: #757575;
 }
 
+iframe {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 hr {
   display: block;
   border: none;
