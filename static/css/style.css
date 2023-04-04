@@ -419,9 +419,9 @@ nav.navigation a.button {
   color: #0366d6;
 }
 
-.index-tags {
-  margin-top: 24px;
-}
+/* .index-tags {
+  margin-top: 16px;
+} */
 .index-tags a {
   background: #f2f2f2;
   padding: 4px 7px;
