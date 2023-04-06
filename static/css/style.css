@@ -82,6 +82,12 @@ tr>td {
 tr:nth-child(odd)>td {
   background: #fcfcfc;
 }
+.fullImage {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   font-weight: 800;
