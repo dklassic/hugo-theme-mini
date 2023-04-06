@@ -83,6 +83,7 @@ tr:nth-child(odd)>td {
   background: #fcfcfc;
 }
 .fullImage {
+  width: 100%;
   max-width: 100%;
   display: block;
   margin-left: auto;
