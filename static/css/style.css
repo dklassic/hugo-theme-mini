@@ -111,6 +111,12 @@ pre {
   word-break: normal;
   overflow-wrap: anywhere;
 }
+svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 .markdown-image img {
   max-width: 100%;
   display: block;
