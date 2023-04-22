@@ -5,6 +5,7 @@
 	<a href="{{ "/tags" | relLangURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
 	<a href="{{ "/game-list" | relLangURL }}">{{ with .Site.Params.games }}{{ . }}{{ else }}{{ i18n "games" }}{{ end }}</a>
 	<a href="{{ "/about" | relLangURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
+	<a href="{{ "/GDC-transcript" | relLangURL }}">{{ with .Site.Params.gdc }}{{ . }}{{ else }}{{ i18n "gdc" }}{{ end }}</a>
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
